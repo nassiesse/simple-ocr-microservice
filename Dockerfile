@@ -16,7 +16,7 @@ ADD https://github.com/tesseract-ocr/tessdata/raw/master/ita.traineddata /usr/sh
 
 # Check the installation status
 RUN tesseract --list-langs    
-RUN tesseract -v 
+RUN tesseract -v  
 
 # Set the location of the jar
 ENV MICROSERVICE_HOME /usr/microservices
